@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box2{
+    margin: auto;
+    margin-top: 60px;
+    padding: 20px;
+    width: 1300px;
+    border: solid 4px rgb(235, 207, 114);
+    border-radius: 20px;
+}
+.text2 {
+    margin-left: 5%;
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(224, 201, 99);
+    text-align: center;
+}
+.container{
+    margin: auto;
+    /*圖片總體框大小*/
+    width: 1200px;
+    height: 600px;
+}
+.container ul {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.container ul li {
+    width: 200px;
+    cursor: pointer;
+}
+.container ul li img {
+    width: 100%;
+    border: 5px solid transparent;
+}
+
+.container ul .bigimg {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    border: 5px solid transparent;
+    background: url(../catcake/1-01.png) no-repeat;
+    background-size: contain;
+    transition: all 0.5s;
+}
+.container ul .frame2 {
+    position: absolute;
+    left: 0;
+    bottom: 5.5px;
+    width: 147px;
+    height: 147px;
+    border: 5px solid  rgb(224, 201, 99);
+    pointer-events: none;
+    transition: all 0.5s;
+}
+.container ul .frame2::before {
+	content: "";
+	position: absolute;
+	top: -19px;
+    left: calc(50% - 15px);
+	width: 30px;
+	height: 15px;
+	background-color:  rgb(224, 201, 99);
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+.container ul li:nth-child(1):hover ~ .bigimg {
+	background-image: url(../catcake/1-01.png);
+}
+.container ul li:nth-child(1):hover ~ .frame2 {
+	left: 0;
+}
+.container ul li:nth-child(2):hover ~ .bigimg {
+	background-image: url(../catcake/2-01.png);
+}
+.container ul li:nth-child(2):hover ~ .frame2 {
+	left: 149.5px;
+}
+.container ul li:nth-child(3):hover ~ .bigimg {
+	background-image: url(../catcake/3-01.png);
+}
+.container ul li:nth-child(3):hover ~ .frame2 {
+	left: 300.5px;
+}
+.container ul li:nth-child(4):hover ~ .bigimg {
+	background-image: url(../catcake/4-01.png);
+}
+.container ul li:nth-child(4):hover ~ .frame2 {
+	left: 450px;
+}
+.container ul li:nth-child(5):hover ~ .bigimg {
+	background-image: url(../catcake/5-01.png);
+}
+.container ul li:nth-child(5):hover ~ .frame2 {
+	left: 600.5px;
+}
+.container ul li:nth-child(6):hover ~ .bigimg {
+	background-image: url(../catcake/6-01.png);
+}
+.container ul li:nth-child(6):hover ~ .frame2 {
+	left: 752.5px;
+}
+.container ul li:nth-child(7):hover ~ .bigimg {
+	background-image: url(../catcake/7-01.png);
+}
+.container ul li:nth-child(7):hover ~ .frame2 {
+	left: 902px;
+}
+.container ul li:nth-child(8):hover ~ .bigimg {
+	background-image: url(../catcake/8-01.png);
+}
+.container ul li:nth-child(8):hover ~ .frame2 {
+	left: 1050.5px;
+}

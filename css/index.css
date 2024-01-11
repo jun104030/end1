@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.main{
+    text-align: center;
+    color: rgb(224, 201, 99);
+    font-size: 30px;
+    width: 1100px; height: 860px;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+.box1{
+    margin-top: 10px;
+    padding: 20px;
+    height: 660px;
+    border: solid 4px rgb(235, 207, 114);
+    border-radius: 20px;
+}
+.icon img{
+    width: 30px;
+    padding: 10px;
+
+}
+.pic img{
+    width: 500px;
+    display: block;
+}
+.pic{
+    float: right;
+
+}
+.text{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.text h5{
+    padding: 30px;
+}
+.text p{
+    padding: 20px;
+    font-size: 20px;
+}
+#link li{
+    display: inline-block;
+}
+#link li a{
+    display: block;
+    padding: 0px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(120, 185, 164);
+}
+.f{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(224, 201, 99);
+    margin-top: 30px;
+}
